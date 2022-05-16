@@ -1,0 +1,112 @@
+.header {
+    font-size: 12px;
+    font-weight: bold;
+
+    #navItem{
+        &:hover {
+            color: $color-hover !important;
+        }
+    }
+}
+
+.container00 {
+    min-height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.arrowDown {
+    display: inline-block;
+    width: 90px;
+    margin-top: 5px;
+}
+
+.logoPC {
+    width: 240px;
+    margin-left: -10px;
+    margin-right: 40px;
+}
+
+#button {
+    padding: $padding-button;
+    border: 2px solid #fff;
+
+    &:hover {
+        color: #000 !important;
+    }
+}
+
+.footer {
+    background-color: #000;
+    height: 15vh;
+    font-size: 12px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    a {
+        text-decoration: none;
+        color: #fff;
+
+        &:hover {
+            color: $color-hover !important;
+        }
+    }
+}
+
+.copyOBC {
+    color: $copyright-footer !important;
+}
+
+.downloadDesc {
+    background-color: #000000;
+    height: 85vh;
+    padding-top: 240px;
+
+    button {
+        border: 2px solid #ffffff;
+        margin-right: 10px;
+
+        &:hover {
+            color: #000000 !important;
+        }
+    }
+}
+
+.emailObc {
+    text-decoration: none;
+    color: #fff;
+    border-bottom: 1px solid #ffffff;
+
+    &:hover {
+        color: $color-hover !important;
+        border-bottom: 1px solid #ffffff;
+    }
+}
+
+// media query
+@media (max-width: 449px) {
+    .downloadDesc {
+        button {
+            margin: 10px 0;
+        }
+    }
+}
+@media (max-width: 405px) {
+    .logoPC {
+        width: 100px;
+        margin-top: 15px;
+    }
+
+    .footer {
+        font-size: 10px;
+    }
+}
+@media (max-width: 350px) {
+    .logoPC {
+        width: 150px;
+        margin-top: 15px;
+    }
+}
